@@ -62,5 +62,5 @@ nonwsnonpipe : (EXCLAMATION | QUOTE | POUND | DOLLAR | PERCENT | AMPERSAND | APO
 ```
 Finally, all instances of `U_00xx : '\u00xx';` lexer rules can be deleted.
 ```
-sed  '/^U_00.*/d' src/main/antlr4/org/snomed/langauges/ecl/generated/parser/ECL.g4
+sed -i '/^U_00.*/d' src/main/antlr4/org/snomed/langauges/ecl/generated/parser/ECL.g4
 ```
